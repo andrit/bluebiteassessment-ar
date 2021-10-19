@@ -18,12 +18,12 @@ const WeatherEl = (lat:number, lon: number) => {
     //** work on getting correct properties of weatherData and matching design */
     return (
         <>
-            <div>
-                {/* <h1>{weatherData.currentTemperature ? weatherData.currentTemperature: '76*F'}</h1>
-                <h2>{weatherData.currentCity ? weatherData.currentCity: 'Miami'}</h2>
-                <h3>{weatherData.todaysDate ? weatherData.todaysDate: 'Tues, Sep 28'}</h3>
-                <picture>{weatherData.weatherGraphic ? weatherData.weatherGraphic: 'weather graphic'}</picture> */}
-            </div>
+            <article className="weather-data">
+                {/* <h1 className="temperature-render">{weatherData.currentTemperature ? weatherData.currentTemperature: '76*F'}</h1>
+                <h2 className="current-city-render">{weatherData.currentCity ? weatherData.currentCity: 'Miami'}</h2>
+                <h3 className="current-date-render">{weatherData.todaysDate ? weatherData.todaysDate: 'Tues, Sep 28'}</h3>
+                <picture className="weather-graphic">{weatherData.weatherGraphic ? weatherData.weatherGraphic: 'weather graphic'}</picture> */}
+            </article>
         
         </>
     );

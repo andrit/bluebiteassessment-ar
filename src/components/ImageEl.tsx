@@ -5,6 +5,6 @@ interface ImageProps {
     alt: string;
 }
 
-const ImageEl = ({src, alt}:ImageProps) => (<><img src={src} alt={alt} /></>);
+const ImageEl = ({src, alt}:ImageProps) => (<><img className="fit-to-container" src={src} alt={alt} /></>);
 
 export default ImageEl;

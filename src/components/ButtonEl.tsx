@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-const ButtonEl = () => {
 
+interface ImageProps {
+    buttonTitle: string;
+    buttonAction: string;
+}
+const ButtonEl = ({buttonTitle, buttonAction}:ImageProps) => {
+/**
+ * buttonAction: <Button action={buttonAction}/>
+ */
     return (
         <>
-            <div>Button</div>
+            <article><button>{buttonTitle}</button></article>
         
         </>
     );

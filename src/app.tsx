@@ -70,8 +70,14 @@ const App = () => {
   
     return (
         <>
-         <CardList pageId={id} listData={listApiData} componentData={componentApiData} variableData={variableApiData}></CardList>
-            <div>Render {id}</div>
+        <header>
+            <h1>Render {id}</h1>
+            <p><a href="/">Go Back To Start</a></p>
+        </header>
+         <CardList pageId={id} 
+                    listData={listApiData} 
+                    componentData={componentApiData} 
+                    variableData={variableApiData}></CardList> 
         </>
     );
 };

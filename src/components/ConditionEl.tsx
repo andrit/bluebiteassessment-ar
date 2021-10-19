@@ -1,1 +1,1 @@
-export const ConditionEl = (booleanState: string) => (  <><div><h1>{booleanState}</h1></div></>);
+export const ConditionEl = (booleanState: string) => (  <><article><h1>{booleanState}</h1></article></>);
