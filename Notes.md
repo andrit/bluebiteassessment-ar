@@ -28,12 +28,9 @@ FlowScreen > (CardStack >selectList>Card*n>{n}TypeLayout))+FlowDirections
 
 
 # Final Direction: controller, renderer, 4 web components
-    app is the original cardstack: it is the fetch and the context & holds the app data object in state (local storage, persistent, cache)
-    card list is what Card was, it is the renderer director
+    app is the original <Cardstack>: it is the fetch and the context & holds the app data object in state (local storage, persistent, cache)
+    <CardList> is what <Card> was, it is the renderer director
     4 UI components : these pass jsx templates to the conditional renderer
     how to read in the data?
     start by reading in the data to a Map/object...3 objects, i thats optional
 
-# Better DX on assesment:
-	•	a summary section of work to be completed before API discussion…otherwsie initial thought is that I have to create the API
-	•	Whats up with the views?
