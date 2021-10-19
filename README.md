@@ -1,26 +1,18 @@
-__ Im trying this out. Keeping the notes in the code.
-its helpful bc my worklfow and skillbased choices mean alot in an interview.
-Moreover, communication is the key to development, so why not write notes on everything before production? __
+communication is the key to development, so why not write notes on everything before production?__
 
-# Initial Thoughts/Notes
+CardList is a monad
+selectList is the context bearing ul of Cards in li. ! changed this
 
-Use React Router to create the 4 views?
- 4 views:?
-nav to control the 
- select that says with the following actions showCity(name), seeTemperature(), advertsToggle(), 
-card component
-card types:
-City, TemperatureNow, Advert, BooleanIsVisible({show, hide})
+# Component Tree 
+**after codebase walkthrough:** 
+1. controller 
+2. renderer
+    - 4 interface elements
+    
+App fetches and holds the global state, provides the state to the CardList to divy up between subscribers, the 4 interface elements: ButtonEl, ConditionEl, ImageEl and weatherEl.
+the interface elements get displayed in response to interpreting the components,lists & variables provided by the data.
 
-Context: selectList(props) renderChildren
+How to read in the data?
+Pass them in as props from properties of a state object
 
-monad is CardStack/Map
-selectList is the context bearing ul of Cards in li.
-
-# Component Tree after codebase walkthrough: controller, renderer, 4 web components
-    app is the original <Cardstack>: it is the fetch and the context & holds the app data object in state (local storage, persistent, cache)
-    <CardList> is what <Card> was, it is the renderer director
-    4 UI components : these pass jsx templates to the conditional renderer
-    how to read in the data?
-    start by reading in the data to a Map/object...3 objects, i thats optional
 
